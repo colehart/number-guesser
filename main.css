@@ -1,0 +1,47 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* fonts */
+
+.bold-font {
+  font-weight: 700;
+}
+.lite-font {
+  font-weight: 300;
+}
+
+/* font colors */
+
+.lt-pink-type {
+  color: #ED458B;
+}
+.dk-pink-type {
+  color: #EB008B;
+}
+.lightest-gray-type {
+  color: #E6E7E8;
+}
+.dk-gray-type {
+  color: #404041;
+}
+.white-type {
+  color: #FFFFFF;
+}
+
+/* background colors */
+
+.dk-pink-bg {
+  background-color: #EB008B;
+}
+.dk-gray-bg {
+  background-color: #404041;
+}
+.med-gray-bg {
+  background-color: #929497;
+}
+.lt-gray-bg {
+  background-color: #D0D2D3;
+}
+header {
+}
