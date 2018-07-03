@@ -34,9 +34,6 @@ body {
 .dk-pink-bg {
   background-color: #EB008B;
 }
-.dk-gray-bg {
-  background-color: #404041;
-}
 .med-gray-bg {
   background-color: #929497;
 }
@@ -44,4 +41,82 @@ body {
   background-color: #D0D2D3;
 }
 header {
+  height: 109px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #404041;
+}
+h1 {
+  font-size: 3.65rem;
+  line-height: 110px;
+  letter-spacing: .02rem;
+}
+main {
+  margin: 51px auto;
+  width: 75%;
+}
+#userGuess {
+  display: block;
+  height: 3rem;
+  line-height: 3rem;
+  width: 59%;
+  padding: .5rem .65rem .6rem;
+  margin: 0 auto .2rem;
+  border: 2px solid #D0D2D3;
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-family: inherit;
+}
+::placeholder {
+  color: #D0D2D3;
+}
+.center {
+  width: 71%;
+  margin: 0 auto;
+  display: block;
+}
+button {
+  display: inline-block;
+  height: 2.8rem;
+  width: 13.25rem;
+  /*margin-top: 2.6rem;*/
+  margin: 2.6rem 0 2.6rem 3rem;
+  border-radius: 25px;
+  background-color: #D0D2D3;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: 1.8rem;
+  padding-bottom: .3rem;
+  letter-spacing: .02rem;
+}
+.left-btn {
+  margin-left: 3rem;
+  float: left;
+}
+.right-btn {
+  margin-left: 2rem;
+}
+section {
+  width: 59%;
+  margin: 1.2rem auto;
+}
+h3 {
+  font-size: 1.77rem;
+  text-align: center;
+  letter-spacing: 0.02rem;
+}
+h2 {
+  font-size: 12.8rem;
+  line-height: 13rem;
+  text-align: center;
+  padding: .25rem;
+}
+.big-btn {
+  width: 59%;
+  height: 2.5rem;
+  margin-top: 3.7rem;
+  padding-bottom: 0;
+  font-size: 1.275rem;
+  letter-spacing: .02rem;
 }

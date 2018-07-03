@@ -7,24 +7,23 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
   </head>
   <body>
-    <header class="dk-gray-bg">
+    <header>
       <h1 class="lt-pink-type bold-font">Number <span class="lightest-gray-type lite-font">Guesser</span></h1>
     </header>
     <main>
       <form>
-        <input placeholder="Enter your guess">
-        <input name="Submit" submit="Submit">
-        <input>
+        <input id="userGuess" type="number" min="1" max="100" placeholder="Enter your guess">
+        <div class="center">
+          <button class="left-btn" type="submit">Guess</button>
+          <button class="right-btn" type="reset">Clear</button>
+        </div>
       </form>
       <section>
         <h3 class="dk-gray-type">Your last guess was</h3>
-        <h2 class="dk-pink-type">#Guessed</h2>
-        <h3 class="dk-gray-type">That is too high</h3>
+        <h2 class="dk-pink-type your-guess">?</h2>
+        <h3 class="dk-gray-type message">Make a guess</h3>
       </section>
-      <!-- Reset button -->
-      <form>
-        <input> 
-      </form>
+      <button class="center big-btn" type="button">Reset</button>
     </main>
     <script src="script.js"></script>
   </body>
