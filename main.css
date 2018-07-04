@@ -10,26 +10,11 @@ body {
 .lt-pink-type {
   color: #ED458B;
 }
-.dk-pink-type {
-  color: #EB008B;
-}
 .lightest-gray-type {
   color: #E6E7E8;
 }
-.dk-gray-type {
-  color: #404041;
-}
 .white-type {
   color: #FFFFFF;
-}
-.dk-pink-bg {
-  background-color: #EB008B;
-}
-.med-gray-bg {
-  background-color: #929497;
-}
-.lt-gray-bg {
-  background-color: #D0D2D3;
 }
 header {
   height: 109px;
@@ -78,12 +63,21 @@ button {
   width: 13.25rem;
   margin-top: 2.6rem;
   border-radius: 25px;
-  background-color: #D0D2D3;
+  background-color: #929497;
   color: #FFFFFF;
   font-family: inherit;
   font-size: 1.8rem;
   padding-bottom: .3rem;
   letter-spacing: .02rem;
+}
+button:disabled {
+  background-color: #D0D2D3;
+}
+button[disabled]:hover {
+  background-color: #D0D2D3;
+}
+button:hover {
+  background-color: #EB008B;
 }
 .guess-btn {
   float: left;
@@ -100,8 +94,10 @@ h3 {
   font-size: 1.77rem;
   text-align: center;
   letter-spacing: 0.02rem;
+  color: #404041;
 }
 h2 {
+  color: #EB008B;
   font-size: 12.8rem;
   line-height: 13rem;
   text-align: center;

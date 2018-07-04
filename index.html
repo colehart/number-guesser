@@ -14,16 +14,16 @@
       <form>
         <input id="userGuess" type="text" min="1" max="100" placeholder="Enter your guess">
         <div class="center">
-          <button class="guess-btn" type="submit">Guess</button>
-          <button class="clear-btn" type="reset">Clear</button>
+          <button class="guess-btn" type="submit" disabled="disabled">Guess</button>
+          <button class="clear-btn" type="reset" disabled="disabled">Clear</button>
         </div>
       </form>
       <section>
-        <h3 class="dk-gray-type">Your last guess was</h3>
-        <h2 class="dk-pink-type your-guess">?</h2>
-        <h3 class="dk-gray-type message">Make a guess</h3>
+        <h3 class="last-guess">Your last guess was</h3>
+        <h2 class="your-guess">?</h2>
+        <h3 class="message">Make a guess</h3>
       </section>
-      <button class="center reset-btn" type="button">Reset</button>
+      <button class="center reset-btn" type="button" disabled="disabled">Reset</button>
     </main>
     <script src="script.js"></script>
   </body>
