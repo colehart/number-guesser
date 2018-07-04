@@ -12,10 +12,10 @@
     </header>
     <main>
       <form>
-        <input id="userGuess" type="text" min="1" max="100" placeholder="Enter your guess">
+        <input id="userGuess" type="number" placeholder="Enter your guess" required>
         <div class="center">
-          <button class="guess-btn" type="submit" disabled="disabled">Guess</button>
-          <button class="clear-btn" type="reset" disabled="disabled">Clear</button>
+          <button class="guess-btn" type="submit" disabled>Guess</button>
+          <button class="clear-btn" type="reset" disabled>Clear</button>
         </div>
       </form>
       <section>
@@ -23,7 +23,7 @@
         <h2 class="your-guess">?</h2>
         <h3 class="message">Make a guess</h3>
       </section>
-      <button class="center reset-btn" type="button" disabled="disabled">Reset</button>
+      <button class="center reset-btn" type="button" disabled>Reset</button>
     </main>
     <script src="script.js"></script>
   </body>
