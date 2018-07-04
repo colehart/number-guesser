@@ -1,8 +1,8 @@
 var randomNumber = 0;
 var userInput = document.querySelector('#userGuess');
-var clearButton = document.querySelector('.right-btn');
-var guessButton = document.querySelector('.left-btn');
-var resetButton = document.querySelector('.big-btn');
+var clearButton = document.querySelector('.clear-btn');
+var guessButton = document.querySelector('.guess-btn');
+var resetButton = document.querySelector('.reset-btn');
 
 window.addEventListener('load', generateAnswer);
 guessButton.addEventListener('click', checkGuess); 
@@ -22,14 +22,13 @@ function checkGuess(event) {
   } else if (guess > randomNumber) {
     document.querySelector('.message').innerText = 'That is too high';
   } else {
-    document.querySelector('.message').innerText = 'BOOM';
+    document.querySelector('.message').innerText = 'BOOM!';
   }
 }
 
 function clearInput() {
   userInput.value = "";
 }
-
 
 function restartGame() {
   generateAnswer();

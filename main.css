@@ -1,18 +1,12 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
-
-/* fonts */
-
 .bold-font {
   font-weight: 700;
 }
 .lite-font {
   font-weight: 300;
 }
-
-/* font colors */
-
 .lt-pink-type {
   color: #ED458B;
 }
@@ -28,9 +22,6 @@ body {
 .white-type {
   color: #FFFFFF;
 }
-
-/* background colors */
-
 .dk-pink-bg {
   background-color: #EB008B;
 }
@@ -90,11 +81,11 @@ button {
   padding-bottom: .3rem;
   letter-spacing: .02rem;
 }
-.left-btn {
+.guess-btn {
   margin-left: 3rem;
   float: left;
 }
-.right-btn {
+.clear-btn {
   margin-left: 2rem;
 }
 section {
@@ -112,7 +103,7 @@ h2 {
   text-align: center;
   padding: .25rem;
 }
-.big-btn {
+.reset-btn {
   width: 59%;
   height: 2.5rem;
   margin-top: 3.7rem;
