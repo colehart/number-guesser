@@ -7,8 +7,8 @@ var rangeMin = 1;
 var rangeMax = 100;
 
 window.addEventListener('load', generateAnswer);
-userInput.addEventListener('keypress', enableButtons);
-guessButton.addEventListener('click', checkNaN); 
+userInput.addEventListener('input', enableButtons);
+guessButton.addEventListener('click', checkRange); 
 clearButton.addEventListener('click', clearInput);
 resetButton.addEventListener('click', restartGame);
 
@@ -21,22 +21,13 @@ function enableButtons() {
   clearButton.removeAttribute('disabled');
 }
 
-function checkNaN(event) {
+function checkRange(event) {
   event.preventDefault();
-  if (isNaN(parseInt(userInput.value, 10))) {
+  var guess = parseInt(userInput.value, 10);
+  if ((isNaN(guess)) || (guess < rangeMin) || (guess > rangeMax)) {
     alert(`Please enter a number between ${rangeMin} and ${rangeMax}.`);
   } else {
-    checkRange(parseInt(userInput.value, 10));
-  }
-}
-
-function checkRange(userGuess) {
-  if (userGuess < rangeMin) {
-    alert(`Please enter a number between ${rangeMin} and ${rangeMax}.`);
-  } else if (userGuess > rangeMax) {
-    alert(`Please enter a number between ${rangeMin} and ${rangeMax}.`);
-  } else {
-    checkGuess(userGuess);
+    checkGuess(guess);
   }
 }
 
