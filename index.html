@@ -11,13 +11,12 @@
       <h1 class="lt-pink-type bold-font">Number <span class="lightest-gray-type lite-font">Guesser</span></h1>
     </header>
     <main>
-      <h3>Set your range to play.</h3>
+      <h3 id="range-msg">Set your range to play.</h3>
       <form>
         <div class="range">
-          <input id="rangeMin" type="number" placeholder="Low" required>
+          <input id="rangeMin" type="number" placeholder="Low" value="1" required>
           <p>to</p>
-          <input id="rangeMax" type="number" placeholder="High" required>
-          <button id="set-btn" type="button" disabled>Set Range</button>
+          <input id="rangeMax" type="number" placeholder="High" value="100" required>
         </div>
       </form>
       <form>
