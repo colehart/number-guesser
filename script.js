@@ -1,9 +1,9 @@
-var userInput = document.querySelector('#userGuess');
+var userInput = document.querySelector('#user-guess');
 var clearButton = document.querySelector('.clear-btn');
 var guessButton = document.querySelector('.guess-btn');
 var resetButton = document.querySelector('.reset-btn');
-var rangeMin = document.querySelector('#rangeMin');
-var rangeMax = document.querySelector('#rangeMax');
+var rangeMin = document.querySelector('#range-min');
+var rangeMax = document.querySelector('#range-max');
 var rangeMessage = document.getElementById('range-msg');
 var randomNumber = 0;
 
@@ -35,7 +35,6 @@ function generateAnswer() {
   randomNumber = Math.floor(Math.random() * (rangeMax - rangeMin)) + rangeMin;
 }
 
-
 function enableGuessButtons() {
   guessButton.removeAttribute('disabled');
   clearButton.removeAttribute('disabled');
@@ -61,6 +60,7 @@ function checkGuess(userGuess) {
     document.querySelector('.message').innerText = 'BOOM!';
     guessButton.setAttribute('disabled', '');
   }
+
   resetButton.removeAttribute('disabled');
 }
 
